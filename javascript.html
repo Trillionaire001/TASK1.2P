@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript Concepts Demonstration</title>
+</head>
+
+<body>
+    <h1>INSPECT TO SEE JAVASCRIPT RUNNING IN CONSOLE!</h1>
+    <script>
+        // String methods
+        const str = "Hello, World!";
+        console.log("String Length:", str.length);
+        console.log("Uppercase:", str.toUpperCase());
+        console.log("Lowercase:", str.toLowerCase());
+        console.log("Substring:", str.substring(0, 5));
+        console.log("Character at index 7:", str.charAt(7));
+
+        // Number methods
+        const num = 42.567;
+        console.log("Fixed to 2 decimal places:", num.toFixed(2));
+        console.log("Rounded:", Math.round(num));
+        console.log("Square root:", Math.sqrt(num));
+        console.log("Absolute value:", Math.abs(-num));
+        console.log("Random number between 0 and 1:", Math.random());
+
+        // Array methods
+        const arr = [2, 5, 8, 10, 3];
+        console.log("Array length:", arr.length);
+        console.log("Index of 8:", arr.indexOf(8));
+        console.log("Array joined as string:", arr.join(", "));
+        console.log("Sorted array:", arr.sort());
+        console.log("Sliced array:", arr.slice(1, 4));
+
+        // Date methods
+        const currentDate = new Date();
+        console.log("Current date:", currentDate);
+        console.log("Year:", currentDate.getFullYear());
+        console.log("Month:", currentDate.getMonth());
+        console.log("Day of the week:", currentDate.getDay());
+        console.log("Hours:", currentDate.getHours());
+
+        // Function methods
+        function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+        const delayedGreet = setTimeout(greet, 2000, "Alice");
+        clearTimeout(delayedGreet); // Cancel the timeout
+
+        function add(a, b) {
+            return a + b;
+        }
+        const result = add(3, 7);
+        console.log("Result of addition:", result);
+    </script>
+</body>
+
+</html>
